@@ -235,3 +235,22 @@ h2 {
     align-items: flex-start;
   }
 }
+
+/* ===== Takeover audit (Nov 25, 2026) ===== */
+.file-main { flex: 1; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.file-main .file-name { flex: none; }
+.file-note { font-size: 0.85rem; color: var(--muted); line-height: 1.4; }
+.flag {
+  display: inline-block; width: fit-content; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em;
+  text-transform: uppercase; padding: 2px 8px; border-radius: 999px; background: #EEECE7; color: var(--muted);
+  vertical-align: middle;
+}
+.flag.ok { background: #E3F2E9; color: #145238; }
+.flag.warn { background: #F5EBD8; color: #7A4A12; }
+.flag.stale { background: #F8E8E8; color: #7A2E2E; }
+.takeover-note {
+  margin: 24px 0 32px; padding: 12px 14px; border: 1px solid var(--rule); border-radius: 12px;
+  font-size: 0.92rem; color: var(--muted); line-height: 1.55;
+}
+.takeover-note a, .site-footer a { color: var(--accent); font-weight: 600; }
+.nav { flex-wrap: wrap; }
